@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="hamburger.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+
+    <!-- hamburger icon-->
+     <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+     </div>
+
+
+    <!-- navbar-->
+     <nav id="nav-bar">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+     </nav>
+
+     <!-- Home-->
+      <section id="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+        <h1>Hello, I'm Sunil</h1>
+        <p>Web Developer</p>
+        <div class="hero-socials">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+
+        </div>
+        <div class="hero-image">
+        <img src="images/profile-pic.png" class="hero-image">
+        </div>
+        </div>
+      </section>
+
+
+      <!-- about section-->
+       <section id="about">
+    <h2>About</h2>
+    <div class="about-container">
+        <img src="images/about-pic.png" alt='profile'>
+
+        <div class="about-text">
+            <h3>Web developer</h3>
+            <p>
+                I am a beginner web developer learning HTML, CSS,
+                and JavaScript. I enjoy building clean and simple websites.
+            </p>
+
+            <div class="personal-info">
+                <ul>
+                    <li><strong>&gt; Birthday:</strong> 23 Dec 2005</li>
+                    <li><strong>&gt; Age:</strong> 22</li>
+                    <li><strong>&gt; Phone:</strong> +977 9844368013</li>
+                    <li><strong>&gt; Email:</strong> sunilpaudel@gmail.com</li>
+                    <li><strong>&gt; Address:</strong> Kathmandu, Nepal</li>
+                    <li><strong>&gt; Degree:</strong> Bachelor running</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Projects -->
+    <section id="portfolio">
+    <h2>Portfolio</h2>
+
+        <div class="project-list">
+            <div class="project-card">
+                <img src="img/project1.jpg" alt="Project 1">
+                <h3>Project One</h3>
+                <p>Short description of the project.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="img/project2.jpg" alt="Project 2">
+                <h3>Project Two</h3>
+                <p>Short description of the project.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="img/project3.jpg" alt="Project 3">
+                <h3>Project Three</h3>
+                <p>Short description of the project.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        
+        <form action="#" class="contact-form">
+
+            <label for="inquiry">Inquiry type</label>
+            <select id="inquiry" required>
+                <option value="general">General Question</option>
+                <option value="collab">Collaboration / Partnership</option>
+                <option value="project">New Project / Hire Me</option>
+                <option value="other">Support/option>
+            </select>
+
+            <!-- fullname-->
+            <label for="fullName">Full Name</label>
+            <input type="text" placeholder="Enter full name" required>
+
+            <!-- gmail-->
+             <label for="email">Gmail</label>
+             <input type="email" id="email" placeholder="Enter email id " required>
+
+
+             <!-- message-->
+              <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+
+            <!-- submit button-->
+             <button type="submit">Submit</button>
+        </form>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
